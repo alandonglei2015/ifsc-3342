@@ -1,0 +1,228 @@
+/* GRID ASSIGNMENT */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+.cf {
+  zoom: 1;
+}
+.cf::before,
+.cf::after {
+  content: "";
+  display: table;
+}
+.cf::after {
+  clear: both;
+}
+
+
+/* target width = 956*/
+.container{
+  /*width: 956px;*/
+  /*background: url("../img/grid.png");*/
+  /*border: 1px solid #000;*/
+  margin: 20px auto;
+}
+
+header.primary{                /* 12 COLUMNS*/
+  width: 95.816%;
+  background: rgba(79, 99, 245, 1.0);
+  margin: 2.092%;
+  padding: 2.092%;
+  float: left;
+}
+
+#content{                      /* 8 COLUMNS*/
+  width: 63.18%;
+  background: rgba(73, 78, 117, 1.0);
+  margin-left: 2.092%;
+  padding: 2.092%;
+  float: left;
+}
+
+aside {                        /* 4 COLUMNS*/
+  width: 30.544%;
+  background: rgba(62, 77, 194, 1.0);
+  margin-left: 2.092%;
+  padding: 2.092%;
+  float: left;
+}
+
+footer.primary {                /* 12 COLUMNS*/
+  width: 95.816%;
+  background: rgba(38, 47, 117, 1.0);
+  margin: 2.092%;
+  padding: 2.092%;
+  float: left;
+}
+
+/*GUTTER WIDTH: 20px
+  COLUMN WIDTH: 58px */
+
+.col-2 {
+  width: 136px;
+  /*width: 14.226%;*/
+  margin-left: 20px;
+  padding: 20px;
+  float: left;
+}
+
+.col-4 {
+  width: 292px;
+  /*width: 30.544%;*/
+  margin-left: 20px;
+  padding: 20px;
+  float: left;
+}
+
+.col-6 {
+  width: 448px;
+  /*width: 46.862%;*/
+  margin-left: 20px;
+  padding: 20px;
+  float: left;
+}
+
+.col-8 {
+  width: 604px;
+  /*width: 63.18%;*/
+  margin-left: 20px;
+  padding: 20px;
+  float: left;
+}
+
+.col-12 {
+  width: 916px;
+  /*width: 95.816%;*/
+  margin-left: 20px;
+  padding: 20px;
+  float: left;
+}
+
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>IFSC 3342 | Audio/Video Players</title>
+  <meta charset="utf-8">                                                                                    
+  <meta name="description" content="Audio/Video Players" />           
+  <meta name="author" content="JD Beene" />                                                                
+  <meta name="keywords" content="UALR, UA Little Rock, Information Science" />   
+  <link rel="stylesheet" href="assets/css/video.css" type="text/css" />  
+  <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="video-center">
+        <h1>Video Player</h1>
+            <video id="my-video"
+                   class="video-js"
+                   controls
+                   preload="auto"
+                   width="640"
+                   height="360"
+                   poster="assets/img/hudson.jpg"
+                   data-setup="{}"
+            >
+            <source src="assets/video/hudson-falls.mp4" type="video/mp4" />
+            <source src="assets/video/hudson-falls.webm" type="video/webm" />
+            <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+            </video>
+    </div>
+
+    <div class="audio-center">
+        <h1>Audio Player</h1>
+            <audio controls="controls">
+                <source src="assets/audio/thunder.ogg" type="audio/ogg" /><!-- Firefox, Opera, Chrome -->
+                <source src="assets/audio/thunder.mp3" type="audio/mp3" /><!-- Safari, Chrome, IE9+ -->
+                <source src="assets/audio/thunder.wav" type="audio/wav" /><!-- Safari, Opera, IE9+, Firefox --> 
+                <a href="assets/audio/thunder.mp3">Download the Audio</a>
+            </audio>
+    </div>
+    <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+</body>
+</html>
